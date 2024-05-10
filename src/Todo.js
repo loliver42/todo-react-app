@@ -19,6 +19,7 @@ function Task({ task, index, completeTask, removeTask }) {
 
 export default function Todo() {
   let [tasksRemaining, setTasksRemaining] = useState(0);
+
   let [tasks, setTasks] = useState([
     {
       title: "Make Dinner",
@@ -35,7 +36,8 @@ export default function Todo() {
   ]);
   useEffect(() => {
     setTasksRemaining(tasks.filter((task) => !task.completed).length);
-  });
+  }, [setTasksRemaining]);
+
   let addTask = (title) => {
     let newTasks = [...tasks, { title, completed: false }];
     setTasks(newTasks);
