@@ -1,0 +1,53 @@
+/* File: src/components/Todo.css */
+
+body {
+  background-color: #e84a5f;
+}
+
+.todo-container {
+  background: #ff847c;
+  width: 40vw;
+  margin: 10em auto;
+  border-radius: 15px;
+  padding: 20px 10px;
+  color: #45171d;
+  border: 3px solid #45171d;
+}
+
+.task {
+  border: 1px solid #45171d;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.task button {
+  background: #fecea8;
+  border-radius: 5px;
+  margin: 0px 5px;
+  padding: 3px 5px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  float: right;
+}
+
+.header {
+  margin: 0.5em;
+  font-size: 2em;
+  text-align: center;
+}
+.pending {
+  text-align: center;
+  font-size: 20px;
+}
+
+.create-task input[type="text"] {
+  margin: 2.5em 2em;
+  width: 80%;
+  outline: none;
+  border: none;
+  padding: 0.7em;
+  background-color: #fecea8;
+  border-radius: 4px;
+}
